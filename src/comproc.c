@@ -41,7 +41,9 @@
 #include <strings.h>
 #endif
 
+#ifdef HAVE_MISSING_H
 #include "missing.h"
+#endif
 #include "nngsconfig.h"
 #include "conffile.h"
 #include "nngsmain.h"

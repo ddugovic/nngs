@@ -1,14 +1,16 @@
-bin_PROGRAMS = nngssrv
+bin_PROGRAMS = nngs
 
 EXTRA_DIST =
 
-INCLUDES = \
-        -I$(top_srcdir)/mlrate/src
+ACLOCAL_AMFLAGS = -I m4
+
+AM_CPPFLAGS = \
+	-I../mlrate/src
 
 LDADD = \
-        $(top_srcdir)/mlrate/src/libmlr.a
+	../mlrate/src/libmlr.a
 
-nngssrv_SOURCES = \
+nngs_SOURCES = \
 	network.c \
 	bm.c \
 	channel.c \

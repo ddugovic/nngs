@@ -21,9 +21,9 @@ BINDIR=/usr/local/bin
 
 CC=gcc -ansi
 
-#CFLAGS=-O3 -fomit-frame-pointer -pedantic -Wall -DNDEBUG $(D)
-CFLAGS=-O3 -fomit-frame-pointer -pedantic -Wall -D__EXTENSIONS__ -DNDEBUG $(D)
-#CFLAGS=-g -pedantic -Wall -D__EXTENSIONS__ -DRDBM_NDBM $(D)
+#CFLAGS=-O3 -fomit-frame-pointer -pedantic -Wall -std=gnu99 -DNDEBUG $(D)
+CFLAGS=-O3 -fomit-frame-pointer -pedantic -Wall -std=gnu99 -D__EXTENSIONS__ -DNDEBUG $(D)
+#CFLAGS=-g -pedantic -Wall -std=gnu99 -D__EXTENSIONS__ -DRDBM_NDBM $(D)
 
 LIBS= #-lgdbm
 

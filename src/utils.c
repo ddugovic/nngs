@@ -77,9 +77,7 @@ int truncate(const char *path, off_t size);
 #include <errno.h>
 #endif
 
-#ifdef HAVE_CRYPT_H
 #include <crypt.h>
-#endif
 
 #ifdef SGI
 #include <sex.h>
@@ -90,7 +88,9 @@ int truncate(const char *path, off_t size);
 #define DMALLOC_FUNC_CHECK 1
 #endif
 
+#ifdef HAVE_MISSING_H
 #include "missing.h"
+#endif
 #include "nngsconfig.h"
 #include "conffile.h"
 #include "nngsmain.h"
@@ -1970,7 +1970,7 @@ filename_ahelp_l_index_0:
   }
 
 #if 0 /* Test trap ... */
-if (strstr(buf,"home/nngs/nngs/share/nngssrv/stats/player_data/j/joop"))
+if (strstr(buf,STATS_DIR"/player_data/j/joop"))
 	raise(5 /* SIGTRAP */ );
 #endif
 
