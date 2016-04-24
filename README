@@ -76,6 +76,7 @@ periodically check and prune these directories.
 To run and test it:
 # mkdir $prefix/nngs && cd $prefix/nngs
 # mkdir ahelp cgames games help info lists messages news players problems spool stats
+# mkdir players/{a..z}
 # $prefix/bin/nngs &
 # telnet localhost 9696
 

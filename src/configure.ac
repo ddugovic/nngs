@@ -28,7 +28,7 @@ dnl AC_SEARCH_LIBS(bind,socket)
 dnl AC_SEARCH_LIBS(crypt,crypt)
 AC_CHECK_LIB(m,pow)
 AC_CHECK_LIB(socket,bind)
-AC_CHECK_LIB(crypt,crypt)
+AC_CHECK_LIB(xcrypt,crypt)
 
 if test "x$ac_cv_mingw32" = "xyes";then
     LIBS="$LIBS -lwsock32"
