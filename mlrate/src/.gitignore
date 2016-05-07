@@ -1,6 +1,9 @@
 anchor
+itime
 libmlr.a
 make.deps
 mlrate
+old2newres
+rdbmtool
 rhistory
 t2res

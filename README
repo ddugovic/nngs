@@ -45,8 +45,7 @@ Step 1:
 Configure and compile mlrate *before* NNGS.  Here's how:
 (current version numbers may be different...)
 
-# tar xvzf mlrate-1.0.xx.tar.gz
-# cd mlrate-1.0.xx
+# cd mlrate
 # ./configure
 # make
 # cd ..
@@ -57,9 +56,6 @@ information on how to set up the ratings system to work properly.
 step 2: 
 unpack tarball and create a symlink to the mlrate directory.
 
-# tar xvzf nngs-1.1.yy.tar.gz
-# cd nngs-1.1.yy
-# ln -s ../mlrate-1.0.xx mlrate
 # ./configure --prefix=/home/nngs
 # make
 # make install
@@ -75,8 +71,7 @@ periodically check and prune these directories.
 
 To run and test it:
 # mkdir $prefix/nngs && cd $prefix/nngs
-# mkdir ahelp cgames games help info lists messages news players problems spool stats
-# mkdir players/{a..z}
+# mkdir -p cgames games info lists messages news players/{a..z} problems spool stats
 # $prefix/bin/nngs &
 # telnet localhost 9696
 

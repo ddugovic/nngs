@@ -1,6 +1,9 @@
 bin_PROGRAMS = nngs
 
-EXTRA_DIST =
+EXTRA_DIST = $(top_srcdir)/../data/ahelp $(top_srcdir)/../data/help
+
+install-data-am:
+	cp -a $(EXTRA_DIST) ${prefix}/$(PACKAGE)/
 
 ACLOCAL_AMFLAGS = -I m4
 

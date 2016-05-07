@@ -77,7 +77,9 @@ int truncate(const char *path, off_t size);
 #include <errno.h>
 #endif
 
+#ifdef HAVE_CRYPT_H
 #include <crypt.h>
+#endif
 
 #ifdef SGI
 #include <sex.h>
