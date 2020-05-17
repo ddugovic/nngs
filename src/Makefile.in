@@ -337,7 +337,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-EXTRA_DIST = $(top_srcdir)/../data/ahelp $(top_srcdir)/../data/help
+EXTRA_DIST = $(top_srcdir)/../data/ahelp $(top_srcdir)/../data/help *.h
 ACLOCAL_AMFLAGS = -I m4
 AM_CPPFLAGS = \
 	-I../mlrate/src

@@ -1,6 +1,6 @@
 bin_PROGRAMS = nngs
 
-EXTRA_DIST = $(top_srcdir)/../data/ahelp $(top_srcdir)/../data/help
+EXTRA_DIST = $(top_srcdir)/../data/ahelp $(top_srcdir)/../data/help *.h
 
 install-data-am:
 	cp -a $(EXTRA_DIST) ${prefix}/$(PACKAGE)/
