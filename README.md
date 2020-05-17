@@ -45,10 +45,10 @@ Step 1:
 Configure and compile mlrate *before* NNGS.  Here's how:
 (current version numbers may be different...)
 
-# cd mlrate
-# ./configure
-# make
-# cd ..
+    cd mlrate
+    ./configure
+    make
+    cd ..
 
 _READ_ the README file in the mlrate directory.  It contains much useful
 information on how to set up the ratings system to work properly.
@@ -56,9 +56,9 @@ information on how to set up the ratings system to work properly.
 step 2: 
 unpack tarball and create a symlink to the mlrate directory.
 
-# ./configure --prefix=/home/nngs
-# make
-# make install
+    ./configure --prefix=/home/nngs
+    make
+    make install
 
 The 'make install' command installs the server and all basic
 help files necessary for its functionality.
@@ -70,10 +70,11 @@ Some of these files may grow over time, as the server runs. You might need to
 periodically check and prune these directories.
 
 To run and test it:
-# mkdir $prefix/nngs && cd $prefix/nngs
-# mkdir -p cgames games info lists messages news players/{a..z} problems spool stats
-# $prefix/bin/nngs &
-# telnet localhost 9696
+
+    mkdir $prefix/nngs && cd $prefix/nngs
+    mkdir -p cgames games info lists messages news players/{a..z} problems spool stats
+    $prefix/bin/nngs &
+    telnet localhost 9696
 
 --------------------------------------------
 -- STEPS FOR EXISTING INSTALLATIONS
